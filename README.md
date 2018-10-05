@@ -2,7 +2,7 @@
 Problems I met when convert Torch to PyTorch
 
 Basically, I tried to convert a Torch model to a PyTorch model through this (https://github.com/clcarwin/convert_torch_to_pytorch).
-However, there are some problems I met during this procedure. I will list them and my solution here.
+However, there are some problems I met during this procedure. I will list the problems and my solutions here.
 
 At the first step, this converter loads the saved torch model by a pytorch method: torch.utils.serialization.load_lua(), so you have to guarantee your pre-saved torch model (consists of model define and maybe pretrained parameters) could be successfully loaded by the function. However, the current load_lua() is still immature to figure out a complicated torch model.
 
